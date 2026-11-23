@@ -47,7 +47,7 @@
     <rect x="0" y="0" width="860" height="125" rx="8" fill="#090d16" stroke="#1e293b" stroke-width="1" />
     <text x="20" y="35" font-family="'JetBrainsMono NF', ui-monospace, monospace" font-size="14" fill="#38bdf8">$ git clone https://github.com/ArtistS24/owasp-ctf-arenas.git</text>
     <text x="20" y="65" font-family="'JetBrainsMono NF', ui-monospace, monospace" font-size="14" fill="#94a3b8">[+] 3 Dockerized Web Stacks (CorpLink PHP · CorpNet SQLi · BrightBoard XSS)</text>
-    <text x="20" y="95" font-family="'JetBrainsMono NF', ui-monospace, monospace" font-size="14" fill="#c084fc">[*] 63 Challenge Questions · 7 Step-by-Step PDF Walkthroughs (75 Pages)</text>
+    <text x="20" y="95" font-family="'JetBrainsMono NF', ui-monospace, monospace" font-size="14" fill="#c084fc">[*] 67 Challenge Questions · 7 Step-by-Step PDF Walkthroughs (75 Pages)</text>
   </g>
 
   <g transform="translate(960, 160)">

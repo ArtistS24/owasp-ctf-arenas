@@ -23,7 +23,7 @@
 
 <br/>
 
-**OWASP CTF Arenas** is a collection of three intentionally vulnerable web applications built from scratch in Docker for the Cyberium "Hack The Grid" CTF tournament. Each arena ships as a self-contained local deployment (`PHP 8.2`, `MySQL 8.0`, `SQLite`) paired with step-by-step author walkthrough PDFs covering **63 challenge questions** across **75 pages**.
+**OWASP CTF Arenas** is a collection of three intentionally vulnerable web applications built from scratch in Docker for the Cyberium "Hack The Grid" CTF tournament. Each arena ships as a self-contained local deployment (`PHP 8.2`, `MySQL 8.0`, `SQLite`) paired with step-by-step author walkthrough PDFs covering **67 challenge questions** across **75 pages**.
 
 > **Lab Safety:** All three arenas contain deliberate application-layer flaws for isolated local training. Archives are password-protected (`infected`) to prevent accidental host deployment or AV quarantine; never expose container ports to untrusted networks.
 
@@ -33,7 +33,7 @@
 | :--- | :--- | :--- | :---: | :--- |
 | [**CorpLink PHP**](corplink-php/README.md) | `php:8.2-apache` (Docker) | Unrestricted File Upload (RCE), OS Command Injection, Local File Inclusion, Unsigned Cookie PrivEsc | 37 | [`htg-php.zip`](corplink-php/htg-php.zip) · [4 PDFs (41p)](corplink-php/README.md#walkthroughs) |
 | [**CorpNet SQLi**](corpnet-sqli/README.md) | `php:8.2-apache` + `mysql:8.0` | Auth Bypass (`OR 1=1`), `ORDER BY` / `UNION SELECT`, `information_schema` Dumping | 10 | [`htg-sqli.zip`](corpnet-sqli/htg-sqli.zip) · [1 PDF (11p)](corpnet-sqli/README.md#walkthrough) |
-| [**BrightBoard XSS**](brightboard-xss/README.md) | `php:8.2-apache` + SQLite PDO + JS | Reflected XSS, Stored XSS, DOM `innerHTML` Sinks, Non-`HttpOnly` Cookie Hijacking | 16 | [`htg-xss.zip`](brightboard-xss/htg-xss.zip) · [2 PDFs (23p)](brightboard-xss/README.md#walkthroughs) |
+| [**BrightBoard XSS**](brightboard-xss/README.md) | `php:8.2-apache` + SQLite PDO + JS | Reflected XSS, Stored XSS, DOM `innerHTML` Sinks, Non-`HttpOnly` Cookie Hijacking | 20 | [`htg-xss.zip`](brightboard-xss/htg-xss.zip) · [2 PDFs (23p)](brightboard-xss/README.md#walkthroughs) |
 
 ## Live Previews
 
@@ -74,7 +74,7 @@ Every challenge includes an illustrated walkthrough detailing reconnaissance, vu
 | **CorpLink PHP** | [`c4-cookie.pdf`](corplink-php/walkthroughs/c4-cookie.pdf) | Client-side role cookie tampering to admin | 8 | 9p · 742 KB |
 | **CorpNet SQLi** | [`corpnet-sqli-walkthrough.pdf`](corpnet-sqli/walkthroughs/corpnet-sqli-walkthrough.pdf) | Auth bypass, `UNION SELECT` &amp; schema dump | 10 | 11p · 621 KB |
 | **BrightBoard XSS** | [`BrightBoard-XSS-Walkthrough.pdf`](brightboard-xss/walkthroughs/BrightBoard-XSS-Walkthrough.pdf) | Reflected, Stored, DOM XSS &amp; session theft | 10 | 12p · 580 KB |
-| **BrightBoard XSS** | [`c1-reflected-xss.pdf`](brightboard-xss/walkthroughs/c1-reflected-xss.pdf) | Reflected search context break &amp; JS execution | 6 | 11p · 887 KB |
+| **BrightBoard XSS** | [`c1-reflected-xss.pdf`](brightboard-xss/walkthroughs/c1-reflected-xss.pdf) | Reflected search context break &amp; JS execution | 10 | 11p · 887 KB |
 
 ## Quick Start
 
@@ -124,7 +124,7 @@ owasp-ctf-arenas/
 ├── brightboard-xss/
 │   ├── README.md
 │   ├── htg-xss.zip                           # Docker Compose PHP 8.2 + SQLite PDO arena
-│   └── walkthroughs/                         # 2 PDFs (23 pages, 16 questions)
+│   └── walkthroughs/                         # 2 PDFs (23 pages, 20 questions)
 ├── assets/
 │   ├── header.png                            # Repository banner
 │   ├── social_preview.{svg,png}              # OpenGraph preview card
