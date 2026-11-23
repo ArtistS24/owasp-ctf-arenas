@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <defs>
+    <linearGradient id="bg-grad-owasp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17" />
+      <stop offset="100%" stop-color="#04060a" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg-grad-owasp)" />
+
+  <rect x="30" y="30" width="1220" height="580" rx="12" fill="none" stroke="#30363d" stroke-width="1.5" />
+  <rect x="30" y="30" width="1220" height="580" rx="12" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-opacity="0.35" />
+
+  <g transform="translate(55, 65)">
+    <circle cx="0" cy="0" r="6" fill="#ff5f56" />
+    <circle cx="20" cy="0" r="6" fill="#ffbd2e" />
+    <circle cx="40" cy="0" r="6" fill="#27c93f" />
+    <text x="65" y="4" font-family="'JetBrainsMono NF', ui-monospace, monospace" font-size="14" font-weight="600" fill="#64748b">artist@box:~ · DENIS ALBIN // OWASP TOP 10 CTF ARENAS</text>
+  </g>
+
+  <line x1="55" y1="90" x2="1225" y2="90" stroke="#1e293b" stroke-width="1" />
+
+  <g transform="translate(55, 130)">
+    <rect x="0" y="0" width="235" height="32" rx="6" fill="#581c87" fill-opacity="0.55" stroke="#c084fc" stroke-width="1.2" />
+    <text x="16" y="21" font-family="'JetBrainsMono NF', ui-monospace, monospace" font-size="13" font-weight="700" fill="#e9d5ff" letter-spacing="1.5">[ OWASP TOP 10 LABS ]</text>
+  </g>
+
+  <text x="55" y="225" font-family="'Adwaita Sans', ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="48" font-weight="800" fill="#f8fafc" letter-spacing="-0.5">OWASP CTF Arenas</text>
+
+  <text x="55" y="275" font-family="'Adwaita Sans', ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="22" font-weight="500" fill="#94a3b8">Three Author-Built Docker Web Arenas &amp; 75-Page Walkthrough Suite</text>
+
+  <g transform="translate(55, 335)">
+    <rect x="0" y="0" width="175" height="38" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="16" y="24" font-family="'JetBrainsMono NF', ui-monospace, monospace" font-size="14" font-weight="600" fill="#e2e8f0">Docker Compose</text>
+
+    <rect x="190" y="0" width="120" height="38" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="206" y="24" font-family="'JetBrainsMono NF', ui-monospace, monospace" font-size="14" font-weight="600" fill="#e2e8f0">PHP 8.2</text>
+
+    <rect x="325" y="0" width="195" height="38" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="341" y="24" font-family="'JetBrainsMono NF', ui-monospace, monospace" font-size="14" font-weight="600" fill="#e2e8f0">MySQL 8 / SQLite</text>
+
+    <rect x="535" y="0" width="235" height="38" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="551" y="24" font-family="'JetBrainsMono NF', ui-monospace, monospace" font-size="14" font-weight="600" fill="#c084fc">7 Walkthrough PDFs</text>
+  </g>
+
+  <g transform="translate(55, 410)">
+    <rect x="0" y="0" width="860" height="125" rx="8" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+    <text x="20" y="35" font-family="'JetBrainsMono NF', ui-monospace, monospace" font-size="14" fill="#38bdf8">$ git clone https://github.com/ArtistS24/owasp-ctf-arenas.git</text>
+    <text x="20" y="65" font-family="'JetBrainsMono NF', ui-monospace, monospace" font-size="14" fill="#94a3b8">[+] 3 Dockerized Web Stacks (CorpLink PHP · CorpNet SQLi · BrightBoard XSS)</text>
+    <text x="20" y="95" font-family="'JetBrainsMono NF', ui-monospace, monospace" font-size="14" fill="#c084fc">[*] 63 Challenge Questions · 7 Step-by-Step PDF Walkthroughs (75 Pages)</text>
+  </g>
+
+  <g transform="translate(960, 160)">
+    <circle cx="140" cy="140" r="110" fill="none" stroke="#c084fc" stroke-width="1.5" stroke-opacity="0.2" />
+    <circle cx="140" cy="140" r="85" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6,6" stroke-opacity="0.4" />
+    <circle cx="140" cy="140" r="60" fill="#581c87" fill-opacity="0.3" stroke="#c084fc" stroke-width="2" />
+
+    <line x1="140" y1="15" x2="140" y2="265" stroke="#c084fc" stroke-width="1" stroke-opacity="0.3" />
+    <line x1="15" y1="140" x2="265" y2="140" stroke="#c084fc" stroke-width="1" stroke-opacity="0.3" />
+
+    <text x="140" y="146" font-family="'JetBrainsMono NF', ui-monospace, monospace" font-size="20" font-weight="800" fill="#e9d5ff" text-anchor="middle">S24</text>
+  </g>
+
+  <text x="55" y="575" font-family="'JetBrainsMono NF', ui-monospace, monospace" font-size="14" font-weight="600" fill="#64748b">DENIS ALBIN · GITHUB: @ArtistS24 · OWASP CTF ARENAS</text>
+</svg>
