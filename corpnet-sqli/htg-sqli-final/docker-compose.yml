@@ -1,0 +1,28 @@
+services:
+  web:
+    build: ./app
+    ports:
+      - "8080:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_HOST: db
+      DB_USER: ctfuser
+      DB_PASS: ctfpass
+      DB_NAME: ctfdb
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: ctfdb
+      MYSQL_USER: ctfuser
+      MYSQL_PASSWORD: ctfpass
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uctfuser", "-pctfpass"]
+      interval: 5s
+      timeout: 10s
+      retries: 10

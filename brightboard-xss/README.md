@@ -15,10 +15,9 @@
 
 ## Local Deployment
 
-Archive password: `infected`. Launches the PHP 8.2 + SQLite PDO Docker Compose service on port `8080`:
+Launches the PHP 8.2 + SQLite PDO Docker Compose service on port `8080`:
 
 ```bash
-unzip -P infected htg-xss.zip
 cd htg-xss-final
 bash start.sh
 # Access portal at http://localhost:8080

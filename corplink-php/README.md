@@ -10,17 +10,16 @@
 
 | Challenge | Attack Vector | Flaw & Impact | Questions | Walkthrough PDF |
 | :--- | :--- | :--- | :---: | :--- |
-| **Challenge 01** | Unrestricted File Upload | MIME-type check bypass & missing extension whitelist -> PHP webshell RCE | 10 | [`c1-file-upload.pdf`](walkthroughs/c1-file-upload.pdf) (1.1 MB · 11p) |
+| **Challenge 01** | Unrestricted File Upload | Missing MIME &amp; extension whitelist -> direct PHP webshell upload RCE | 10 | [`c1-file-upload.pdf`](walkthroughs/c1-file-upload.pdf) (1.1 MB · 11p) |
 | **Challenge 02** | OS Command Injection | Unsanitized IP parameter concatenated into shell execution (`; && \|`) -> RCE | 10 | [`c2-command-injection.pdf`](walkthroughs/c2-command-injection.pdf) (1.0 MB · 11p) |
 | **Challenge 03** | Local File Inclusion (LFI) | Dynamic `include()` path parameter without sanitization -> `../../etc/passwd` disclosure | 9 | [`c3-lfi.pdf`](walkthroughs/c3-lfi.pdf) (866 KB · 10p) |
 | **Challenge 04** | Insecure Cookie Handling | Unsigned client-editable role cookie -> admin dashboard privilege escalation | 8 | [`c4-cookie.pdf`](walkthroughs/c4-cookie.pdf) (742 KB · 9p) |
 
 ## Local Deployment
 
-Archive password: `infected`. Runs in an isolated Docker container (`corplink-lab`) on port `8080`:
+Runs in an isolated Docker container (`corplink-lab`) on port `8080`:
 
 ```bash
-unzip -P infected htg-php.zip
 cd htg-php
 bash start.sh
 # Access portal at http://localhost:8080
