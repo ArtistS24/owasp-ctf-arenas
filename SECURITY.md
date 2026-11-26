@@ -11,7 +11,7 @@
 All three containerized web applications in this repository (`corplink-php/`, `corpnet-sqli/`, and `brightboard-xss/`) are **deliberately vulnerable educational CTF arenas** built for the Cyberium "Hack The Grid" tournament and intended strictly for isolated local laboratory practice.
 
 - Application-level flaws documented in the walkthrough PDFs (unrestricted file upload, OS command injection, LFI, insecure cookies, SQL injection, and XSS) are intentional by design.
-- Archives are password-protected (`infected`) to avoid accidental host deployment or endpoint AV false positives. Never bind arena containers to public or untrusted network interfaces.
+- Arena containers are intended strictly for isolated `localhost` lab deployment. Never bind arena ports to public or untrusted network interfaces.
 
 ## Reporting a Vulnerability
 
